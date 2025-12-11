@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Scheduler Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="controls">
+            <div class="brand">📅 Scheduler Pro</div>
+
+            <div class="control-group">
+                <label>Mode:</label>
+                <select id="viewModeSelector">
+                    <option value="class">Class View</option>
+                    <option value="staff">Staff View</option>
+                </select>
+            </div>
+
+            <div id="classControls" class="control-group">
+                <label>Class:</label>
+                <select id="classSelector"></select>
+                <button id="btnCheck" class="btn btn-primary">Check Collisions</button>
+                <button id="btnAuto" class="btn btn-success">Auto-Fill Remaining</button>
+            </div>
+
+            <div class="control-group right">
+                <button id="themeToggle" class="btn" title="Toggle theme">🌙 Dark</button>
+                <button id="btnReset" class="btn btn-danger">Reset</button>
+                <span id="saveStatus" class="save-indicator">Saved</span>
+                <button onclick="downloadFinalJSON()" class="btn" style="background-color: #8b5cf6;">⬇ Export
+                    JSON</button>
+            </div>
+        </header>
+
+        <div id="gridContainer">Loading...</div>
+        <div id="gridContainer">Loading...</div>
+
+        <div id="progressSection" class="progress-container"></div>
+
+        <div id="statusBar" class="status-bar hidden"></div>
+        <div id="statusBar" class="status-bar hidden"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

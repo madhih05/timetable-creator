@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable (View Only)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Extra styling for View Mode */
+        .controls {
+            justify-content: space-between;
+            border-bottom: none;
+        }
+
+        .readonly-cell {
+            padding: 15px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        .empty-cell {
+            color: #cbd5e1;
+            font-style: italic;
+        }
+
+        .brand {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="controls">
+            <div class="brand">📅 School Timetable</div>
+
+            <div class="control-group">
+                <label>View Mode:</label>
+                <select id="viewModeSelector">
+                    <option value="class">Class Timetables</option>
+                    <option value="staff">Staff Timetables</option>
+                </select>
+            </div>
+
+            <div id="filterControls" class="control-group">
+                <label>Filter:</label>
+                <div class="dropdown">
+                    <button id="filterBtn" class="btn" style="background:#fff; color:#333; border:1px solid #ccc;">
+                        Select Classes ⬇
+                    </button>
+                    <div id="filterMenu" class="dropdown-content">
+                    </div>
+                </div>
+                <button onclick="selectAll()" class="text-btn">Select All</button>
+                <button onclick="clearAll()" class="text-btn">Clear</button>
+            </div>
+
+            <div class="control-group">
+                <button id="themeToggle" class="btn" title="Toggle theme">🌙 Dark</button>
+            </div>
+        </header>
+
+        <div id="gridContainer">Loading data...</div>
+    </div>
+
+    <script src="js/view.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+{
+  "setup": {
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "periods_per_day": 8
+  },
+  "allocations": [
+    {
+      "class_name": "Class 10-A",
+      "subjects": [
+        { "subject": "Mathematics", "teacher": "Mr. A. Anderson", "periods": 5 },
+        { "subject": "Physics", "teacher": "Ms. B. Baker", "periods": 4 },
+        { "subject": "Chemistry", "teacher": "Mr. C. Clark", "periods": 4 },
+        { "subject": "English", "teacher": "Mrs. D. Davis", "periods": 5 },
+        { "subject": "History", "teacher": "Mr. E. Evans", "periods": 3 },
+        { "subject": "Geography", "teacher": "Ms. F. Foster", "periods": 3 },
+        { "subject": "Sports", "teacher": "Coach G. Green", "periods": 2 },
+        { "subject": "Library", "teacher": "Mrs. L. Lewis", "periods": 1 }
+      ]
+    },
+    {
+      "class_name": "Class 10-B",
+      "subjects": [
+        { "subject": "Mathematics", "teacher": "Mr. A. Anderson", "periods": 5 },
+        { "subject": "Physics", "teacher": "Ms. B. Baker", "periods": 4 },
+        { "subject": "Biology", "teacher": "Dr. H. Harris", "periods": 4 },
+        { "subject": "English", "teacher": "Mrs. D. Davis", "periods": 5 },
+        { "subject": "History", "teacher": "Mr. E. Evans", "periods": 3 },
+        { "subject": "Computer Science", "teacher": "Mr. I. Irwin", "periods": 3 },
+        { "subject": "Sports", "teacher": "Coach G. Green", "periods": 2 },
+        { "subject": "Art", "teacher": "Ms. J. Jones", "periods": 2 }
+      ]
+    },
+    {
+      "class_name": "Class 11-Science",
+      "subjects": [
+        { "subject": "Advanced Math", "teacher": "Mr. K. Kelly", "periods": 6 },
+        { "subject": "Advanced Physics", "teacher": "Ms. B. Baker", "periods": 5 },
+        { "subject": "Advanced Chem", "teacher": "Mr. C. Clark", "periods": 5 },
+        { "subject": "Computer Science", "teacher": "Mr. I. Irwin", "periods": 5 },
+        { "subject": "English Lit", "teacher": "Mr. M. Martin", "periods": 4 },
+        { "subject": "Lab Session", "teacher": "Lab Assistant", "periods": 3 }
+      ]
+    },
+    {
+      "class_name": "Class 11-Arts",
+      "subjects": [
+        { "subject": "History", "teacher": "Mr. E. Evans", "periods": 6 },
+        { "subject": "Geography", "teacher": "Ms. F. Foster", "periods": 6 },
+        { "subject": "Economics", "teacher": "Mrs. N. Nelson", "periods": 5 },
+        { "subject": "English Lit", "teacher": "Mr. M. Martin", "periods": 5 },
+        { "subject": "Political Science", "teacher": "Mr. O. Olson", "periods": 4 },
+        { "subject": "Library", "teacher": "Mrs. L. Lewis", "periods": 2 }
+      ]
+    }
+  ],
+  "grid": {}
+}
